@@ -1,3 +1,4 @@
+source variables.sh
 rm -r build
-rm -f myos.iso
+rm -f $ISO_NAME.iso
 rm -f iso/boot/kernel.bin
