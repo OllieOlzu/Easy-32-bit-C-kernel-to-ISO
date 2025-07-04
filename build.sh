@@ -23,4 +23,9 @@ cp build/kernel.bin iso/boot/
 grub-mkrescue -o $ISO_NAME.iso iso
 
 # === Optional: Run with QEMU ===
-qemu-system-i386 -cdrom $ISO_NAME.iso
+if [ "$RUN_IN_QEMU" = "true" ]; then
+    echo "Running $ISO_NAME in QEMU..."
+    qemu-system-i386 -cdrom $ISO_NAME.iso
+fi
+
+
