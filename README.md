@@ -36,3 +36,7 @@ Reset by simply running reset.sh:
 
 You will now have the same files as before you ran build.sh, you can modify kernel.c and when your ready, build it again.
 
+# THINGS YOU CAN CUSTOMISE
+
+You can customise kernel.c of cource to change what code get executed, but apart from that you can change grub.cfg (found in iso/boot/grub/grub.cfg) where you can make a gui get displayed and time out by changing the timeout variable. You can also change the name of the ISO file that gets made by changing variables.sh, and also if QEMU should run when build.sh is run.
+
